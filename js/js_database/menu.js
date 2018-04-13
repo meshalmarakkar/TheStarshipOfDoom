@@ -37,7 +37,7 @@ TheStarshipOfDoom.menuState.prototype = {
 	},
 	
 	onStartButtonDown : function() {
-		this.game.state.start('intermediateStateVar', true, false, 15000, 9);
+		this.game.state.start('intermediateStateVar', true, false, 0, 0);
 	}
 }
 
