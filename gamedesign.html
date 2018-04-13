@@ -1,0 +1,73 @@
+<!doctype html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>page1 - Web Dev</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script src="js/mobile.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<ul id="navigation">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="game.html">Game</a>
+					</li>
+					<li>
+						<a href="gameM.html">Multiplayer</a>
+					</li>
+					<li class="menu selectd">
+						<a href="design.html">Design Doc</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body">
+			<div class="header">
+				<div>
+					<h1>Game Design</h1>
+					<p>
+					<img src="images/gameplay1.png" alt="">
+					The game has been to designed to be an extension of the classic game "Space Invaders" like the one seen above. It goes further by having a variety of enemies that can provide the player with abilities like in "Megaman".
+					These aspects are explored in other sections so this page will only consist of diagrams that give a visual representation of the game's functionality.   
+					</p>
+					<h2> State Diagram </h2>
+					<p>
+					<img src="images/state_diagram.jpg" alt="">
+					The player can pause the game while playing the game; but can also go back to the start at anypoint by clicking a button on the bottom right of the screen.
+					</p>
+					<h2> Class Diagram </h2>
+					<p>
+					<img src="images/class_diagram.jpg" alt="">
+					The above diagram illustrates how the game operates. The game loads and goes to the menu. Here the menu is initialised and is played. 
+					Since audio is Phaser is independant to the states, it is only dealt with here to make sure multiple versions of the same audio is played over eachother.
+					Then the game moves to "Intermediate". This controls the leveling of the game, displays the story, and allows the player to choose upgrades. The game switches between "Game" and "Intermediate" every level until it is the last level, where "Intermediate" moves the game over to the "Game over" section where scores can be stored to the database.
+					The "Game" class takes care setting up levels. It works with other classes that deal with the player and enemy. Both "player" and "enemy" class co-operate with the "attributes" class to deal with the features they possess.
+					</p>
+					<h2> Use Case Diagram </h2>
+					<p>
+					<img src="images/case_diagram.jpg" alt="">
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footnote">
+				<div>
+					<p>GARY ANDERSON B00266621 </p>
+					<p>DECLAN MCGEE B00275050 </p>
+					<p>MESHAL MARAKKAR B00269701 </p>
+					<p>JOLENE SWEENEY B00285373 </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

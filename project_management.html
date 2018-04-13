@@ -1,0 +1,118 @@
+<!doctype html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>page1 - Web Dev</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script src="js/mobile.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<ul id="navigation">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="game.html">Game</a>
+					</li>
+					<li>
+						<a href="gameM.html">Multiplayer</a>
+					</li>
+					<li class="menu selectd">
+						<a href="design.html">Design Doc</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body">
+			<div class="header">
+				<div>
+					<h1>Project Management</h1>
+					<h2>Gantt Chart</h2>
+					
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['gantt']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Task ID');
+      data.addColumn('string', 'Task Name');
+      data.addColumn('date', 'Start Date');
+      data.addColumn('date', 'End Date');
+      data.addColumn('number', 'Duration');
+      data.addColumn('number', 'Percent Complete');
+      data.addColumn('string', 'Dependencies');
+
+      data.addRows([
+        ['Website Creation', 'Website Creation', 
+		new Date(2018, 1, 19), new Date(2018, 2, 2), null, 100, null],
+        ['Game Plan', 'Game Plan', 
+         new Date(2018, 1, 26), new Date(2018, 2, 02), null, 100, null],
+        ['Documentation', 'Documentation',
+         new Date(2018, 2, 02), new Date(2018, 3, 02), null, 100, null],
+        ['Level Design', 'Level Design', 
+         new Date(2018, 2, 09), new Date(2018, 2, 23), null, 100, null],
+        ['Level Development', 'Level Development', 
+         new Date(2018, 2, 23), new Date(2018, 3, 23), null, 100, null],
+        ['Boss Level Development', 'Boss Level Development', 
+         new Date(2018, 3, 9), new Date(2018, 3, 23), null, 100, null],
+        ['Video Creation', 'Video Creation',
+         new Date(2018, 3, 26), new Date(2018, 3, 27), null, 100, null],
+        ['Game Design', 'Game Design', 
+         new Date(2018, 3, 23), new Date(2018, 3, 28), null, 100, null],
+		 ['Final Submission', 'Final Submission', 
+         new Date(2018, 3, 30), new Date(2018, 3, 31), null, 100, null]
+      ]);
+
+      var options = {
+        height: 400,
+        gantt: {
+          trackHeight: 40
+        }
+      };
+
+      var chart = new google.visualization.Gantt(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+  </script>
+</head>
+<body>
+  <div id="chart_div"></div>
+</body>
+					<h2>Project Roles</h2>
+					<p> 
+					Declan McGee (Project Leader/Programmer) - Design and create levels. Design upgrades. Design and create bosses.
+					</p>
+					<p>
+					Meshal Marakkar (Lead Programmer) - Structure of game (modularity), Multiplayer, Database
+					</p>
+					<p>
+					Gary Anderson (Website Developer/Level Designer) - Create levels, Website creation and handling
+					</p>
+					<p>
+					Jolene Sweeney (Technical Planner) - Database
+					</p>	
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footnote">
+				<div>
+					<p>GARY ANDERSON B00266621 </p>
+					<p>DECLAN MCGEE B00275050 </p>
+					<p>MESHAL MARAKKAR B00269701 </p>
+					<p>JOLENE SWEENEY B00285373 </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
